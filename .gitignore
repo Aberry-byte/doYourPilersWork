@@ -3,6 +3,9 @@
 !*.*
 !*/
 
+!makefile
+testts.js
+
 .idea/*
 out/*
 doYourPilersWork.iml
