@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# Main script to test what compilers are installed
+# Main script to test what pilers are installed
 # Author: Alex Huft
 import shutil
 
@@ -15,6 +15,12 @@ def command_exists(cmd: str) -> bool:
 
 
 if __name__ == "__main__":
+    # we have to make sure make is installed
+    # before we do anything else
+    if command_exists("make") is None:
+        print("Please install 'make' through your package manager")
+
+    # if make is installed we can continue with the program
     for index, compiler in enumerate(compilers):
         if command_exists(compiler):
             cmd_exists[index] = True
