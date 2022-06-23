@@ -1,26 +1,26 @@
 test:
 	python3 do_your_pilers_work.py
 
-c:
+gcc:
 	gcc test.c -o testC
 
-cpp:
+g++:
 	g++ test.cpp -o testCpp
 
 go:
 	go build -o testGo test.go
 
-java:
+javac:
 	javac test.java
 
-javascript:
+node:
 	node test.js
 
-python:
+python3:
 	python3 test.py
 
-rust:
+rustc:
 	rustc test.rs -o testRust
 
-typescript:
+tsc:
 	tsc testts.ts
