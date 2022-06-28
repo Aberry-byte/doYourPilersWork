@@ -24,3 +24,18 @@ rustc:
 
 tsc:
 	tsc testts.ts
+
+lua:
+	lua test.lua
+
+ruby:
+	ruby test.rb
+
+clean:
+	rm -v testC
+	rm -v testCpp
+	rm -v testGo
+	rm -v test.class
+	rm -v testRust
+	rm -v testts.js
+
