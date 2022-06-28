@@ -2,9 +2,10 @@
 # Main script to test what pilers are installed
 # Author: Alex Huft
 import shutil
+import subprocess
 
 
-compilers = ["gcc", "g++", "python3", "java", "go", "rustc", "node", "tsc", "lua", "ruby"]
+compilers = ["gcc", "g++", "python3", "javac", "go", "rustc", "node", "tsc", "lua", "ruby"]
 cmd_exists = [False, False, False, False, False, False, False, False, False, False]
 test_files = ["test.c", "test.cpp", "test.py", "test.java", "test.go", "test.rs", "test.js", "testts.ts", "test.lua",
               "test.rb"]
@@ -29,3 +30,14 @@ if __name__ == "__main__":
             print(f"{compiler:<12}found")
         else:
             print(f"{compiler:<12}not found")
+
+    print()
+
+    for index, value in enumerate(compilers):
+        if cmd_exists[index]:
+            print(f"**** testing {value} ****")
+            p = subprocess.run(f"make {value}", shell=True, check=True)
+            print(f"{value} works correctly")
+
+    print("\nClearing binaries")
+    subprocess.run(f"make clean", shell=True)
