@@ -35,3 +35,4 @@ Then you can move into the created directory and run `make`
 
 ## General wants
 - add option to install all available pilers
+- I want to have little dependencies as possible so anyway to facilitate that I am open to, this might require switching to a compiled language for the main script.
