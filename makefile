@@ -17,10 +17,10 @@ javac:
 	javac test.java
 
 node:
-	node test.js
+	node test.js > /dev/null
 
 python3:
-	python3 test.py
+	python3 test.py > /dev/null
 
 rustc:
 	rustc test.rs -o testRust
@@ -29,10 +29,10 @@ tsc:
 	tsc testts.ts
 
 lua:
-	lua test.lua
+	lua test.lua > /dev/null
 
 ruby:
-	ruby test.rb
+	ruby test.rb > /dev/null
 
 clean:
 	rm -v testC
