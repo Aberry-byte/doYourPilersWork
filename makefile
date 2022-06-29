@@ -35,10 +35,10 @@ ruby:
 	ruby test.rb > /dev/null
 
 clean:
-	rm -v testC
-	rm -v testCpp
-	rm -v testGo
-	rm -v test.class
-	rm -v testRust
-	rm -v testts.js
+	rm -v testC || true
+	rm -v testCpp || true
+	rm -v testGo || true
+	rm -v test.class || true
+	rm -v testRust || true
+	rm -v testts.js || true
 
