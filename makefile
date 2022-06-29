@@ -1,4 +1,7 @@
-test:
+default:
+	make -s run
+
+run:
 	python3 do_your_pilers_work.py
 
 gcc:
