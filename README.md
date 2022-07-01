@@ -31,5 +31,6 @@ Then you can move into the created directory and run `make`
 # TODO
 
 ## General wants
+- Print out piler version as well
 - I want to have little dependencies as possible so anyway to facilitate that I am open to, this might require switching to a compiled language for the main script.
 - add option to install all available pilers (probably too much for this project)
